@@ -1,0 +1,87 @@
+@import '../../src/var.css';
+
+.header{
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+
+.CreateProjectcontainer{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #cccccc;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.projectForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.projectlabel{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.input{
+    border: 1px solid;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.textArea{
+    border: 1px solid;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.choseFile{
+    margin: 10px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit{
+    margin: 15px;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: blanchedalmond;
+    font-size: large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.submit:hover{
+    transform: scale(1.2);
+}
+
+.closeIcon:hover{
+    transform: scale(1.2);
+    color: red;
+}
+
+.successMessage{
+    color: green;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.notsuccessMessage{
+    color: red;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}

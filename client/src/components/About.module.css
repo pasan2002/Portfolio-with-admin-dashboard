@@ -1,0 +1,92 @@
+@import '../../src/var.css';
+
+.container{
+    position: relative;
+    color: var(--color-text);
+    background-color: rgba(12, 12, 12, 0.6);
+    border-radius: 15px;
+    padding: 73px;
+    margin-top: 129px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.title{
+    font-size: 2.188rem;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.abtImage{
+    width: 35%;
+}
+
+.abtItems{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.abtSkills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    list-style: none;
+    padding: 25px;
+    background-image: linear-gradient(
+        90deg,
+      rgba(165, 215, 232, 0.42) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.abtSkills:hover {
+    background-size: 100% 100%;
+}
+
+.abtSkills h3{
+    font-size: 1.563rem;
+    font-weight: 600;
+
+}
+
+.abtSkills p{
+   font-size: 1.563rem;
+   font-weight: 400; 
+}
+
+@media screen and (max-width:830px){
+    .container{
+       background-color: transparent;
+       padding-left: 0;
+       padding-right: 0; 
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .abtImage{
+        display: none;
+    }
+
+    .abtItems{
+        margin-top: 29px;
+    }
+
+    .abtSkills{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

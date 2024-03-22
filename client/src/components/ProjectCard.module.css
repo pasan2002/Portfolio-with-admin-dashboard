@@ -1,0 +1,89 @@
+@import '../../src/var.css';
+
+.project{
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  margin: 20px;
+  object-fit: fill;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+  box-shadow: 0 16px 14px 0 #04152d;
+  padding: 18px 24px;
+  max-width: 345px;
+}
+
+.cardImage {
+  margin-bottom: 26px;
+  width: 298px;
+  height: 200px;
+}
+
+.title {
+  font-size: 20px; 
+  font-weight: 700;
+}
+
+.description {
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 400;
+  text-overflow: initial;
+}
+
+.skills {
+  width: 100%;
+  margin-top: 14px;
+  gap: 6px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.skill {
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 100px;
+  background: var(--color-dark);
+  padding: 10px 20px;
+}
+
+.links {
+  width: 100%;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.link {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 100px;
+  background: var(--color-primary);
+  padding: 1px 22px;
+}
+
+.link:hover{
+  transform: scale(1.2);
+}
+
+.imageContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.descriptionContainer{
+  width: 100%;
+  height: 110px;
+}
+

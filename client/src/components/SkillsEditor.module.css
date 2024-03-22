@@ -1,0 +1,87 @@
+@import '../../src/var.css';
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #cccccc;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header{
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+
+.skillList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skillCard {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    width: calc(33% - 20px); 
+    text-align: center; 
+}
+
+.skillCard:hover {
+    transform: scale(1.02);
+}
+
+.skillTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.image {
+    object-fit: cover; 
+}
+
+.icons{
+    margin: 5px;
+}
+
+.icon{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.icon:hover{
+    transform: scale(2)
+}
+
+
+.createNewSkill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.createButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.createIcon{
+    margin: 5px;
+}
+
+.createButton:hover{
+    transform: scale(1.2);
+}
