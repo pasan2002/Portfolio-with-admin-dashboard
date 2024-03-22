@@ -38,9 +38,10 @@ const errorHandlerMiddleware = require('./middleware/error-handler');
 app.use(express.json());
 app.use(fileUpload({ useTempFiles: true }));
 app.use(cors({
-    origin: 'http://localhost:5173', 
+    origin: ['http://localhost:5173', 'https://file-uploading-gamma.vercel.app'], 
     credentials: true 
 }));
+
 
 // Routers
 const authRouter = require("./routes/auth");
