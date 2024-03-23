@@ -1,0 +1,104 @@
+@import '../../src/var.css';
+
+.header{
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #cccccc;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.editHistoryForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.Label{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.input{
+    border: 1px solid;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.ImageContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deleteIcon{
+    width: 30px;
+    height: 30px;
+}
+
+.choseFile{
+    margin: 10px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save{
+    margin: 15px;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: blanchedalmond;
+    font-size: large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.save:hover{
+    transform: scale(1.2);
+}
+
+.successMessage{
+    color: green;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.notsuccessMessage{
+    color: red;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.closeIcon:hover{
+    transform: scale(1.2);
+    color: red;
+}

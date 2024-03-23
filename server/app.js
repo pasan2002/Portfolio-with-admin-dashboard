@@ -31,6 +31,9 @@ const publicRouter = require("./routes/public")
 //skill router
 const skillRouter = require("./routes/skills")
 
+//history router
+const historyRouter = require("./routes/history")
+
 //error handler
 const notFoundMiddleware = require('./middleware/not-found');
 const errorHandlerMiddleware = require('./middleware/error-handler');
@@ -51,6 +54,7 @@ app.use("/api/v1/auth", authRouter);
 app.use('/api/v1/projects', authenticateUser, projectRouter);
 app.use("/api/v1/public", publicRouter )
 app.use("/api/v1/skills", authenticateUser, skillRouter)
+app.use("/api/v1/history", authenticateUser, historyRouter)
 
 // Error handling middleware
 app.use(notFoundMiddleware);

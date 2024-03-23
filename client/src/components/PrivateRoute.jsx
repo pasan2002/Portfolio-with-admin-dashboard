@@ -9,12 +9,14 @@ import { IoLogOut } from "react-icons/io5"
 import CreateProject from "./CreateProject"
 import EditProject from "./EditProject"
 import SkillsEditor from "./SkillsEditor"
+import HistoryEditor from "./History"
 
 export default function PrivateRoute() {
 const [projects, setProjects] = React.useState([])
 const [showCreateProject, setShowCreateProject] = React.useState(false)
 const [editingProject, setEditingProject] = React.useState(null)
 const [showSkillsEditor, setShowSkillsEditor] = React.useState(false)
+const [showHistoryEditor, setHistoryEditor] = React.useState(false)
 const navigate = useNavigate()
 
 useEffect(() => {
@@ -73,11 +75,11 @@ const handleLogoutOnClose = () => {
     localStorage.removeItem("jwtToken")
 }
 
-window.addEventListener("beforeunload", handleLogoutOnClose)
+// window.addEventListener("beforeunload", handleLogoutOnClose)
 
-if(!localStorage.getItem("jwtToken")){
-    return <Navigate to="/adminlogin" replace/>
-}
+// if(!localStorage.getItem("jwtToken")){
+//     return <Navigate to="/adminlogin" replace/>
+// }
 
 const handleOnClick = () => {
     localStorage.removeItem("jwtToken")
@@ -90,7 +92,11 @@ const toggleCreateProject = () => {
 
 const toggleSkillsEditor = () => {
     setShowSkillsEditor(!showSkillsEditor);
-};
+}
+
+const toggleHistoryEditor = () => {
+    setHistoryEditor(!showHistoryEditor)
+}
 
 return (
     <section>
@@ -99,6 +105,9 @@ return (
             <p onClick={handleOnClick} className={styles.logout}>Logout <IoLogOut /></p>
             <p className={styles.skillButton} onClick={toggleSkillsEditor}>
                 Skills Editor
+            </p>
+            <p onClick={toggleHistoryEditor} className={styles.historyButton}>
+                History Editor
             </p>
         </div>
         <h1 className={styles.header}>All Projects</h1>
@@ -137,7 +146,8 @@ return (
         </div>
         {showCreateProject && <CreateProject hideCreateProject={toggleCreateProject}/>}
         {editingProject && <EditProject project={editingProject} hideEditProject={() => setEditingProject(null)}/>}
-        {showSkillsEditor && <SkillsEditor />} 
+        {showSkillsEditor && <SkillsEditor />}
+        {showHistoryEditor && <HistoryEditor />} 
     </section>
 )
 }
