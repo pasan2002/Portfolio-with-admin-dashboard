@@ -46,11 +46,6 @@ To run this project, you will need to add the following environment variables to
 
 `API_SECRET` = api secret of your cloudinary
 
-
-
-2. Now create a new file and name it as .env. Then add your mongoDB url, JWT secret, JWT lifetime. cloudinary cloud name, cloudinary api key and cloudinary api secret.
-
-
 3. Now add your images to hero and history folders and you have to update image names in history.json. You have to add your own information to other fields of that two json files.
 
 
