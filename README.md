@@ -74,7 +74,7 @@ You can create a Admin acc and login after login you can create new project, edi
 ![App Screenshot](https://res.cloudinary.com/dl9ectnzs/image/upload/v1711168503/Screenshot_2024-03-23_100357_pk8cqk.png)
 
 ![App Screenshot](https://res.cloudinary.com/dl9ectnzs/image/upload/v1711168641/Screenshot_2024-03-23_100710_qtnfk4.png)
-3. Now add your images to hero and history folders and you have to update image names in history.json. You have to add your own information to other fields of that two json files.
+
 
 ## You can use Cyclic, Railway or Render to deploy server and for client you can use Vercel.
 
