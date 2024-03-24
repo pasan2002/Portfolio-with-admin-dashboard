@@ -46,11 +46,11 @@ To run this project, you will need to add the following environment variables to
 
 `API_SECRET` = api secret of your cloudinary
 
-3. Now add your images to hero and history folders and you have to update image names in history.json. You have to add your own information to other fields of that two json files.
+3. Now add your images to hero folder and you have to update image name in hero.jsx file.  You have to add your own information to other fields in the admin dashboard after that all the information will be chage to your own info.
 
 
 ## Screenshots
-You can create a Admin acc and login after login you can create new project, edit projects, delete projects.Also you can add new skills, edit skills and delete skills.
+You can create an Admin acc and login after login you can create new project, edit projects, delete projects.Also you can add new skills, edit skills and delete skills. As a new feature now you can create experiences, delete experiences and edit experiences.
 
 ![App Screenshot](https://res.cloudinary.com/dl9ectnzs/image/upload/v1710909092/Screenshot_2024-03-20_095342_oj51gm.png)
 
@@ -69,6 +69,12 @@ You can create a Admin acc and login after login you can create new project, edi
 ![App Screenshot](https://res.cloudinary.com/dl9ectnzs/image/upload/v1711168503/Screenshot_2024-03-23_100357_pk8cqk.png)
 
 ![App Screenshot](https://res.cloudinary.com/dl9ectnzs/image/upload/v1711168641/Screenshot_2024-03-23_100710_qtnfk4.png)
+
+![Screenshot 2024-03-24 064527](https://github.com/pasan2002/Portfolio/assets/115849043/4c02117b-736a-43cb-9b63-f9d5ac8a00a2)
+
+![Screenshot 2024-03-24 064546](https://github.com/pasan2002/Portfolio/assets/115849043/2d47622f-4766-4662-9ee5-539c00dea870)
+
+![Screenshot 2024-03-24 064605](https://github.com/pasan2002/Portfolio/assets/115849043/2b6b070e-0d51-464f-a1be-19f38ede08cf)
 
 
 ## You can use Cyclic, Railway or Render to deploy server and for client you can use Vercel.
